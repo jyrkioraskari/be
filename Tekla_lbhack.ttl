@@ -1,0 +1,188 @@
+@prefix ns0: <https://w3id.org/bot#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ns1: <https://example.com/> .
+@prefix ns2: <https://example.com/resources/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ns3: <http://qudt.org/schema/qudt/> .
+
+<https://example.com/resources/2bd6oqkEX438uvNjAycBJY>
+  a <https://w3id.org/bot#Site> ;
+  ns0:hasBuilding <https://example.com/resources/0sEjEJAvj8LPTfoUH6OWQ8> ;
+  rdfs:label "Unknown"^^xsd:string ;
+  ns1:globalId "2bd6oqkEX438uvNjAycBJY"^^xsd:string .
+
+<https://example.com/resources/0sEjEJAvj8LPTfoUH6OWQ8>
+  a ns0:Building ;
+  ns0:hasStorey <https://example.com/resources/1YH%24YsZMP9AvLPCW48NSbS> ;
+  rdfs:label "Unknown"^^xsd:string ;
+  ns1:globalId "0sEjEJAvj8LPTfoUH6OWQ8"^^xsd:string .
+
+<https://example.com/resources/1YH%24YsZMP9AvLPCW48NSbS>
+  a ns0:Storey ;
+  ns0:hasElement <https://example.com/resources/309q_rH8jBExg6zTqLm0_N> ;
+  rdfs:label "Unknown"^^xsd:string ;
+  ns1:globalId "1YH$YsZMP9AvLPCW48NSbS"^^xsd:string .
+
+<https://example.com/resources/09lBYlecT7SORREq6i3ctF>
+  a ns0:Element, <http://ifcowl.openbimstandards.org/IFC2X3_Final#IfcBeam> ;
+  rdfs:description "IPE240"^^xsd:string ;
+  rdfs:label "BEAM"^^xsd:string ;
+  ns1:globalId "09lBYlecT7SORREq6i3ctF"^^xsd:string ;
+  ns2:hEIGHTAdditionalProperties 0.24 ;
+  ns2:lENGTHAdditionalProperties 3.6 ;
+  ns2:mAIN_PARTAdditionalProperties 4908.0 ;
+  ns2:nAMEAdditionalProperties "BEAM"^^xsd:string ;
+  ns2:pROFILEAdditionalProperties "IPE240"^^xsd:string ;
+  ns2:wIDTHAdditionalProperties 0.12 ;
+  ns2:isExternalPsetBeamcommon false ;
+  ns2:loadBearingPsetBeamcommon false ;
+  ns2:rollPsetBeamcommon 0.0 ;
+  ns2:slopePsetBeamcommon 0.0 ;
+  ns2:crossSectionArea 0.003900000000000001 ;
+  ns2:grossSurfaceArea 3.3200000000000003 ;
+  ns2:grossVolume 0.014000000000000002 ;
+  ns2:netSurfaceArea 3.42 ;
+  ns2:netVolume 0.013000000000000003 ;
+  ns2:outerSurfaceArea 3.3200000000000003 .
+
+ns2:309q_rH8jBExg6zTqLm0_N
+  a ns0:Element, <http://ifcowl.openbimstandards.org/IFC2X3_Final#IfcElementAssembly> ;
+  rdfs:label "BEAM"^^xsd:string ;
+  ns1:globalId "309q_rH8jBExg6zTqLm0_N"^^xsd:string ;
+  ns2:referencePsetElementassemblycommon "B/0(?)"^^xsd:string .
+
+ns2:3IBGUyg0v7CvrqVMEKPP3s
+  rdfs:label "+0"^^xsd:string ;
+  ns1:globalId "3IBGUyg0v7CvrqVMEKPP3s"^^xsd:string .
+
+ns2:2AdFpnABX2FgOxGr8iL5Y1
+  rdfs:label "+3600"^^xsd:string ;
+  ns1:globalId "2AdFpnABX2FgOxGr8iL5Y1"^^xsd:string .
+
+ns2:12vq8a8HjFjwi1O_dbHMXq
+  rdfs:label "+7200"^^xsd:string ;
+  ns1:globalId "12vq8a8HjFjwi1O_dbHMXq"^^xsd:string .
+
+ns1:PsetElementassemblycommon
+  a <http://ifcowl.openbimstandards.org/IFC2X3_Final#IfcPropertySet> ;
+  rdfs:label "Pset_ElementAssemblyCommon"^^xsd:string ;
+  ns1:hasProperty ns2:referencePsetElementassemblycommon .
+
+ns2:referencePsetElementassemblycommon
+  a rdf:Property ;
+  rdfs:label "Reference"^^xsd:string ;
+  ns1:belongsToPset ns1:PsetElementassemblycommon .
+
+ns1:AdditionalProperties
+  a <http://ifcowl.openbimstandards.org/IFC2X3_Final#IfcPropertySet> ;
+  rdfs:label "Additional Properties"^^xsd:string ;
+  ns1:hasProperty ns2:lENGTHAdditionalProperties, ns2:nAMEAdditionalProperties, ns2:mAIN_PARTAdditionalProperties, ns2:pROFILEAdditionalProperties, ns2:wIDTHAdditionalProperties, ns2:hEIGHTAdditionalProperties .
+
+ns2:lENGTHAdditionalProperties
+  a rdf:Property ;
+  ns3:ucumCode "mm"^^xsd:string ;
+  rdfs:label "LENGTH"^^xsd:string ;
+  ns1:belongsToPset ns1:AdditionalProperties .
+
+ns2:nAMEAdditionalProperties
+  a rdf:Property ;
+  rdfs:label "NAME"^^xsd:string ;
+  ns1:belongsToPset ns1:AdditionalProperties .
+
+ns2:mAIN_PARTAdditionalProperties
+  a rdf:Property ;
+  rdfs:label "MAIN_PART"^^xsd:string ;
+  ns1:belongsToPset ns1:AdditionalProperties .
+
+ns2:pROFILEAdditionalProperties
+  a rdf:Property ;
+  rdfs:label "PROFILE"^^xsd:string ;
+  ns1:belongsToPset ns1:AdditionalProperties .
+
+ns2:wIDTHAdditionalProperties
+  a rdf:Property ;
+  ns3:ucumCode "mm"^^xsd:string ;
+  rdfs:label "WIDTH"^^xsd:string ;
+  ns1:belongsToPset ns1:AdditionalProperties .
+
+ns2:hEIGHTAdditionalProperties
+  a rdf:Property ;
+  ns3:ucumCode "mm"^^xsd:string ;
+  rdfs:label "HEIGHT"^^xsd:string ;
+  ns1:belongsToPset ns1:AdditionalProperties .
+
+ns1:PsetBeamcommon
+  a <http://ifcowl.openbimstandards.org/IFC2X3_Final#IfcPropertySet> ;
+  rdfs:label "Pset_BeamCommon"^^xsd:string ;
+  ns1:hasProperty ns2:isExternalPsetBeamcommon, ns2:loadBearingPsetBeamcommon, ns2:slopePsetBeamcommon, ns2:rollPsetBeamcommon .
+
+ns2:isExternalPsetBeamcommon
+  a rdf:Property ;
+  rdfs:label "IsExternal"^^xsd:string ;
+  ns1:belongsToPset ns1:PsetBeamcommon .
+
+ns2:loadBearingPsetBeamcommon
+  a rdf:Property ;
+  rdfs:label "LoadBearing"^^xsd:string ;
+  ns1:belongsToPset ns1:PsetBeamcommon .
+
+ns2:slopePsetBeamcommon
+  a rdf:Property ;
+  rdfs:label "Slope"^^xsd:string ;
+  ns1:belongsToPset ns1:PsetBeamcommon .
+
+ns2:rollPsetBeamcommon
+  a rdf:Property ;
+  rdfs:label "Roll"^^xsd:string ;
+  ns1:belongsToPset ns1:PsetBeamcommon .
+
+ns1:QtoBeambasequantities
+  a <http://ifcowl.openbimstandards.org/IFC2X3_Final#IfcElementQuantity> ;
+  rdfs:label "Qto_BeamBaseQuantities"^^xsd:string ;
+  ns1:hasQuantity ns2:length, ns2:crossSectionArea, ns2:outerSurfaceArea, ns2:grossSurfaceArea, ns2:netSurfaceArea, ns2:grossVolume, ns2:netVolume, ns2:grossWeight, ns2:netWeight .
+
+ns2:length
+  a rdf:Property ;
+  rdfs:label "Length"^^xsd:string ;
+  ns1:belongsToElementQuantity ns1:QtoBeambasequantities .
+
+ns2:crossSectionArea
+  a rdf:Property ;
+  rdfs:label "CrossSectionArea"^^xsd:string ;
+  ns1:belongsToElementQuantity ns1:QtoBeambasequantities .
+
+ns2:outerSurfaceArea
+  a rdf:Property ;
+  rdfs:label "OuterSurfaceArea"^^xsd:string ;
+  ns1:belongsToElementQuantity ns1:QtoBeambasequantities .
+
+ns2:grossSurfaceArea
+  a rdf:Property ;
+  rdfs:label "GrossSurfaceArea"^^xsd:string ;
+  ns1:belongsToElementQuantity ns1:QtoBeambasequantities .
+
+ns2:netSurfaceArea
+  a rdf:Property ;
+  rdfs:label "NetSurfaceArea"^^xsd:string ;
+  ns1:belongsToElementQuantity ns1:QtoBeambasequantities .
+
+ns2:grossVolume
+  a rdf:Property ;
+  rdfs:label "GrossVolume"^^xsd:string ;
+  ns1:belongsToElementQuantity ns1:QtoBeambasequantities .
+
+ns2:netVolume
+  a rdf:Property ;
+  rdfs:label "NetVolume"^^xsd:string ;
+  ns1:belongsToElementQuantity ns1:QtoBeambasequantities .
+
+ns2:grossWeight
+  a rdf:Property ;
+  rdfs:label "GrossWeight"^^xsd:string ;
+  ns1:belongsToElementQuantity ns1:QtoBeambasequantities .
+
+ns2:netWeight
+  a rdf:Property ;
+  rdfs:label "NetWeight"^^xsd:string ;
+  ns1:belongsToElementQuantity ns1:QtoBeambasequantities .
