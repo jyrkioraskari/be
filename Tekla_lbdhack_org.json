@@ -1,0 +1,403 @@
+{
+  "@context": {
+    "bot": "https://w3id.org/bot#",
+    "ex": "https://example.com/",
+    "fog": "https://w3id.org/fog#",
+    "fso": "https://w3id.org/fso#",
+    "ifc": "http://ifcowl.openbimstandards.org/IFC2X3_Final#",
+    "inst": "https://example.com/resources/",
+    "kbt": "https://w3id.org/kobl/building-topology#",
+    "omg": "https://w3id.org/omg#",
+    "qudt": "http://qudt.org/schema/qudt/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "tso": "https://w3id.org/tso#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "@base": "https://example.com/resources/"
+  },
+  "@graph": [
+    {
+      "@id": "inst:2bd6oqkEX438uvNjAycBJY",
+      "@type": [
+        "bot:Site"
+      ]
+    },
+    {
+      "@id": "inst:0sEjEJAvj8LPTfoUH6OWQ8",
+      "@type": [
+        "bot:Building"
+      ]
+    },
+    {
+      "@id": "inst:1YH%24YsZMP9AvLPCW48NSbS",
+      "@type": [
+        "bot:Storey"
+      ]
+    },
+    {
+      "@id": "inst:09lBYlecT7SORREq6i3ctF",
+      "@type": [
+        "bot:Element"
+      ]
+    },
+    {
+      "@id": "inst:309q_rH8jBExg6zTqLm0_N",
+      "@type": [
+        "bot:Element"
+      ]
+    },
+    {
+      "@id": "inst:1YH%24YsZMP9AvLPCW48NSbS",
+      "bot:hasElement": [
+        {
+          "@id": "inst:309q_rH8jBExg6zTqLm0_N"
+        }
+      ]
+    },
+    {
+      "@id": "inst:0sEjEJAvj8LPTfoUH6OWQ8",
+      "bot:hasStorey": [
+        {
+          "@id": "inst:1YH%24YsZMP9AvLPCW48NSbS"
+        }
+      ]
+    },
+    {
+      "@id": "inst:2bd6oqkEX438uvNjAycBJY",
+      "bot:hasBuilding": [
+        {
+          "@id": "inst:0sEjEJAvj8LPTfoUH6OWQ8"
+        }
+      ]
+    },
+    {
+      "@id": "inst:09lBYlecT7SORREq6i3ctF",
+      "ex:globalId": "09lBYlecT7SORREq6i3ctF",
+      "rdfs:label": "BEAM",
+      "rdfs:description": "IPE240"
+    },
+    {
+      "@id": "inst:309q_rH8jBExg6zTqLm0_N",
+      "ex:globalId": "309q_rH8jBExg6zTqLm0_N",
+      "rdfs:label": "BEAM"
+    },
+    {
+      "@id": "inst:3IBGUyg0v7CvrqVMEKPP3s",
+      "ex:globalId": "3IBGUyg0v7CvrqVMEKPP3s",
+      "rdfs:label": "+0"
+    },
+    {
+      "@id": "inst:2AdFpnABX2FgOxGr8iL5Y1",
+      "ex:globalId": "2AdFpnABX2FgOxGr8iL5Y1",
+      "rdfs:label": "+3600"
+    },
+    {
+      "@id": "inst:12vq8a8HjFjwi1O_dbHMXq",
+      "ex:globalId": "12vq8a8HjFjwi1O_dbHMXq",
+      "rdfs:label": "+7200"
+    },
+    {
+      "@id": "inst:0sEjEJAvj8LPTfoUH6OWQ8",
+      "ex:globalId": "0sEjEJAvj8LPTfoUH6OWQ8",
+      "rdfs:label": "Unknown"
+    },
+    {
+      "@id": "inst:1YH%24YsZMP9AvLPCW48NSbS",
+      "ex:globalId": "1YH$YsZMP9AvLPCW48NSbS",
+      "rdfs:label": "Unknown"
+    },
+    {
+      "@id": "inst:2bd6oqkEX438uvNjAycBJY",
+      "ex:globalId": "2bd6oqkEX438uvNjAycBJY",
+      "rdfs:label": "Unknown"
+    },
+    {
+      "@id": "inst:309q_rH8jBExg6zTqLm0_N",
+      "inst:referencePsetElementassemblycommon": {
+        "@value": "B/0(?)",
+        "@type": "xsd:string"
+      }
+    },
+    {
+      "@id": "inst:09lBYlecT7SORREq6i3ctF",
+      "inst:lENGTHAdditionalProperties": {
+        "@value": "3.6",
+        "@type": "xsd:decimal"
+      },
+      "inst:nAMEAdditionalProperties": {
+        "@value": "BEAM",
+        "@type": "xsd:string"
+      },
+      "inst:mAIN_PARTAdditionalProperties": {
+        "@value": "4908",
+        "@type": "xsd:decimal"
+      },
+      "inst:pROFILEAdditionalProperties": {
+        "@value": "IPE240",
+        "@type": "xsd:string"
+      },
+      "inst:wIDTHAdditionalProperties": {
+        "@value": "0.12",
+        "@type": "xsd:decimal"
+      },
+      "inst:hEIGHTAdditionalProperties": {
+        "@value": "0.24",
+        "@type": "xsd:decimal"
+      }
+    },
+    {
+      "@id": "inst:09lBYlecT7SORREq6i3ctF",
+      "inst:isExternalPsetBeamcommon": {
+        "@value": "false",
+        "@type": "xsd:boolean"
+      },
+      "inst:loadBearingPsetBeamcommon": {
+        "@value": "false",
+        "@type": "xsd:boolean"
+      },
+      "inst:slopePsetBeamcommon": {
+        "@value": "0",
+        "@type": "xsd:decimal"
+      },
+      "inst:rollPsetBeamcommon": {
+        "@value": "0",
+        "@type": "xsd:decimal"
+      }
+    },
+    {
+      "@id": "inst:09lBYlecT7SORREq6i3ctF",
+      "inst:crossSectionArea": {
+        "@value": "0.003900000000000001",
+        "@type": "xsd:decimal"
+      },
+      "inst:outerSurfaceArea": {
+        "@value": "3.3200000000000003",
+        "@type": "xsd:decimal"
+      },
+      "inst:grossSurfaceArea": {
+        "@value": "3.3200000000000003",
+        "@type": "xsd:decimal"
+      },
+      "inst:netSurfaceArea": {
+        "@value": "3.42",
+        "@type": "xsd:decimal"
+      },
+      "inst:grossVolume": {
+        "@value": "0.014000000000000002",
+        "@type": "xsd:decimal"
+      },
+      "inst:netVolume": {
+        "@value": "0.013000000000000003",
+        "@type": "xsd:decimal"
+      }
+    },
+    {
+      "@id": "ex:PsetElementassemblycommon",
+      "@type": "ifc:IfcPropertySet",
+      "rdfs:label": "Pset_ElementAssemblyCommon",
+      "ex:hasProperty": [
+        {
+          "@id": "inst:referencePsetElementassemblycommon",
+          "@type": "rdf:Property",
+          "rdfs:label": "Reference",
+          "ex:belongsToPset": {
+            "@id": "ex:PsetElementassemblycommon"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "ex:AdditionalProperties",
+      "@type": "ifc:IfcPropertySet",
+      "rdfs:label": "Additional Properties",
+      "ex:hasProperty": [
+        {
+          "@id": "inst:lENGTHAdditionalProperties",
+          "@type": "rdf:Property",
+          "rdfs:label": "LENGTH",
+          "ex:belongsToPset": {
+            "@id": "ex:AdditionalProperties"
+          },
+          "qudt:ucumCode": {
+            "@value": "mm",
+            "@type": "xsd:string"
+          }
+        },
+        {
+          "@id": "inst:nAMEAdditionalProperties",
+          "@type": "rdf:Property",
+          "rdfs:label": "NAME",
+          "ex:belongsToPset": {
+            "@id": "ex:AdditionalProperties"
+          }
+        },
+        {
+          "@id": "inst:mAIN_PARTAdditionalProperties",
+          "@type": "rdf:Property",
+          "rdfs:label": "MAIN_PART",
+          "ex:belongsToPset": {
+            "@id": "ex:AdditionalProperties"
+          }
+        },
+        {
+          "@id": "inst:pROFILEAdditionalProperties",
+          "@type": "rdf:Property",
+          "rdfs:label": "PROFILE",
+          "ex:belongsToPset": {
+            "@id": "ex:AdditionalProperties"
+          }
+        },
+        {
+          "@id": "inst:wIDTHAdditionalProperties",
+          "@type": "rdf:Property",
+          "rdfs:label": "WIDTH",
+          "ex:belongsToPset": {
+            "@id": "ex:AdditionalProperties"
+          },
+          "qudt:ucumCode": {
+            "@value": "mm",
+            "@type": "xsd:string"
+          }
+        },
+        {
+          "@id": "inst:hEIGHTAdditionalProperties",
+          "@type": "rdf:Property",
+          "rdfs:label": "HEIGHT",
+          "ex:belongsToPset": {
+            "@id": "ex:AdditionalProperties"
+          },
+          "qudt:ucumCode": {
+            "@value": "mm",
+            "@type": "xsd:string"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "ex:PsetBeamcommon",
+      "@type": "ifc:IfcPropertySet",
+      "rdfs:label": "Pset_BeamCommon",
+      "ex:hasProperty": [
+        {
+          "@id": "inst:isExternalPsetBeamcommon",
+          "@type": "rdf:Property",
+          "rdfs:label": "IsExternal",
+          "ex:belongsToPset": {
+            "@id": "ex:PsetBeamcommon"
+          }
+        },
+        {
+          "@id": "inst:loadBearingPsetBeamcommon",
+          "@type": "rdf:Property",
+          "rdfs:label": "LoadBearing",
+          "ex:belongsToPset": {
+            "@id": "ex:PsetBeamcommon"
+          }
+        },
+        {
+          "@id": "inst:slopePsetBeamcommon",
+          "@type": "rdf:Property",
+          "rdfs:label": "Slope",
+          "ex:belongsToPset": {
+            "@id": "ex:PsetBeamcommon"
+          }
+        },
+        {
+          "@id": "inst:rollPsetBeamcommon",
+          "@type": "rdf:Property",
+          "rdfs:label": "Roll",
+          "ex:belongsToPset": {
+            "@id": "ex:PsetBeamcommon"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "ex:QtoBeambasequantities",
+      "@type": "ifc:IfcElementQuantity",
+      "rdfs:label": "Qto_BeamBaseQuantities",
+      "ex:hasQuantity": [
+        {
+          "@id": "inst:length",
+          "@type": "rdf:Property",
+          "rdfs:label": "Length",
+          "ex:belongsToElementQuantity": {
+            "@id": "ex:QtoBeambasequantities"
+          }
+        },
+        {
+          "@id": "inst:crossSectionArea",
+          "@type": "rdf:Property",
+          "rdfs:label": "CrossSectionArea",
+          "ex:belongsToElementQuantity": {
+            "@id": "ex:QtoBeambasequantities"
+          }
+        },
+        {
+          "@id": "inst:outerSurfaceArea",
+          "@type": "rdf:Property",
+          "rdfs:label": "OuterSurfaceArea",
+          "ex:belongsToElementQuantity": {
+            "@id": "ex:QtoBeambasequantities"
+          }
+        },
+        {
+          "@id": "inst:grossSurfaceArea",
+          "@type": "rdf:Property",
+          "rdfs:label": "GrossSurfaceArea",
+          "ex:belongsToElementQuantity": {
+            "@id": "ex:QtoBeambasequantities"
+          }
+        },
+        {
+          "@id": "inst:netSurfaceArea",
+          "@type": "rdf:Property",
+          "rdfs:label": "NetSurfaceArea",
+          "ex:belongsToElementQuantity": {
+            "@id": "ex:QtoBeambasequantities"
+          }
+        },
+        {
+          "@id": "inst:grossVolume",
+          "@type": "rdf:Property",
+          "rdfs:label": "GrossVolume",
+          "ex:belongsToElementQuantity": {
+            "@id": "ex:QtoBeambasequantities"
+          }
+        },
+        {
+          "@id": "inst:netVolume",
+          "@type": "rdf:Property",
+          "rdfs:label": "NetVolume",
+          "ex:belongsToElementQuantity": {
+            "@id": "ex:QtoBeambasequantities"
+          }
+        },
+        {
+          "@id": "inst:grossWeight",
+          "@type": "rdf:Property",
+          "rdfs:label": "GrossWeight",
+          "ex:belongsToElementQuantity": {
+            "@id": "ex:QtoBeambasequantities"
+          }
+        },
+        {
+          "@id": "inst:netWeight",
+          "@type": "rdf:Property",
+          "rdfs:label": "NetWeight",
+          "ex:belongsToElementQuantity": {
+            "@id": "ex:QtoBeambasequantities"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "inst:09lBYlecT7SORREq6i3ctF",
+      "@type": "ifc:IfcBeam"
+    },
+    {
+      "@id": "inst:309q_rH8jBExg6zTqLm0_N",
+      "@type": "ifc:IfcElementAssembly"
+    }
+  ]
+}
