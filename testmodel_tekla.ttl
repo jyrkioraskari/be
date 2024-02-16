@@ -1,0 +1,62 @@
+@prefix schema: <http://schema.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bot: <https://w3id.org/bot#> .
+@prefix ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#> .
+@prefix omg: <https://w3id.org/omg#> .
+@prefix xsd: <https://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix beo: <https://pi.pauwel.be/voc/buildingelement#> .
+@prefix opm: <https://w3id.org/opm#> .
+@prefix lbd: <https://linkedbuildingdata.org/LBD#> .
+@prefix props: <http://lbd.arch.rwth-aachen.de/props#> .
+@prefix geo: <https://www.opengis.net/ont/geosparql#> .
+@prefix seas: <https://w3id.org/seas/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix IFC4-PSD: <https://www.linkedbuildingdata.net/IFC4-PSD#> .
+@prefix smls: <https://w3id.org/def/smls-owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix inst: <https://www.econom.one/> .
+@prefix mep: <http://pi.pauwel.be/voc/distributionelement#> .
+@prefix furn: <http://pi.pauwel.be/voc/furniture#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix fog: <https://w3id.org/fog#> .
+
+inst:beam_09bcb8af-a267-4771-86db-3b41ac0e6dcf
+        props:loadBearing         inst:loadBearing_09bcb8af-a267-4771-86db-3b41ac0e6dcf ;
+        props:netWeight           inst:netWeight_09bcb8af-a267-4771-86db-3b41ac0e6dcf ;
+        props:netSurfaceArea      inst:netSurfaceArea_09bcb8af-a267-4771-86db-3b41ac0e6dcf ;
+        props:status              inst:status_09bcb8af-a267-4771-86db-3b41ac0e6dcf ;
+        props:batid               inst:batid_09bcb8af-a267-4771-86db-3b41ac0e6dcf ;
+        props:LENGTH              inst:LENGTH_09bcb8af-a267-4771-86db-3b41ac0e6dcf ;
+        props:descriptionIfcRoot  inst:descriptionIfcRoot_09bcb8af-a267-4771-86db-3b41ac0e6dcf ;
+        props:isExternal          inst:isExternal_09bcb8af-a267-4771-86db-3b41ac0e6dcf ;
+        props:grossSurfaceArea    inst:grossSurfaceArea_09bcb8af-a267-4771-86db-3b41ac0e6dcf ;
+        props:PROFILE             inst:PROFILE_09bcb8af-a267-4771-86db-3b41ac0e6dcf ;
+        rdf:type                  beo:Beam ;
+        props:roll                inst:roll_09bcb8af-a267-4771-86db-3b41ac0e6dcf ;
+        props:crossSectionArea    inst:crossSectionArea_09bcb8af-a267-4771-86db-3b41ac0e6dcf ;
+        props:NAME                inst:NAME_09bcb8af-a267-4771-86db-3b41ac0e6dcf ;
+        props:grossWeight         inst:grossWeight_09bcb8af-a267-4771-86db-3b41ac0e6dcf ;
+        props:nameIfcRoot         inst:nameIfcRoot_09bcb8af-a267-4771-86db-3b41ac0e6dcf ;
+        props:outerSurfaceArea    inst:outerSurfaceArea_09bcb8af-a267-4771-86db-3b41ac0e6dcf ;
+        props:globalIdIfcRoot     inst:globalIdIfcRoot_09bcb8af-a267-4771-86db-3b41ac0e6dcf ;
+        props:MAIN_PART           inst:MAIN_PART_09bcb8af-a267-4771-86db-3b41ac0e6dcf ;
+        props:slope               inst:slope_09bcb8af-a267-4771-86db-3b41ac0e6dcf ;
+        props:grossVolume         inst:grossVolume_09bcb8af-a267-4771-86db-3b41ac0e6dcf ;
+        props:netVolume           inst:netVolume_09bcb8af-a267-4771-86db-3b41ac0e6dcf ;
+        rdf:type                  beo:Beam-NOTDEFINED ;
+        props:HEIGHT              inst:HEIGHT_09bcb8af-a267-4771-86db-3b41ac0e6dcf ;
+        props:length              inst:length_09bcb8af-a267-4771-86db-3b41ac0e6dcf ;
+        props:WIDTH               inst:WIDTH_09bcb8af-a267-4771-86db-3b41ac0e6dcf ;
+        rdf:type                  bot:Element .
+
+
+inst:grossWeight_09bcb8af-a267-4771-86db-3b41ac0e6dcf
+        rdf:type              opm:Property ;
+        rdfs:label            "Qto_BeamBaseQuantities:grossWeight" ;
+        opm:hasPropertyState  inst:elementWeight_4535fbce-4b46-4542-b47a-b5020c47a2e4 .
+
+inst:state_grossWeight_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p0
+        rdf:type              opm:CurrentPropertyState ;
+        prov:generatedAtTime  "2024-02-14T17:27:01.8338523" ;
+        schema:value          "110"^^<http://www.w3.org/2001/XMLSchema#decimal> .

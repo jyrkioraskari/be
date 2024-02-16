@@ -1,0 +1,55 @@
+@prefix schema: <http://schema.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bot: <https://w3id.org/bot#> .
+@prefix ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#> .
+@prefix omg: <https://w3id.org/omg#> .
+@prefix xsd: <https://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix beo: <https://pi.pauwel.be/voc/buildingelement#> .
+@prefix opm: <https://w3id.org/opm#> .
+@prefix lbd: <https://linkedbuildingdata.org/LBD#> .
+@prefix props: <http://lbd.arch.rwth-aachen.de/props#> .
+@prefix geo: <https://www.opengis.net/ont/geosparql#> .
+@prefix seas: <https://w3id.org/seas/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix IFC4-PSD: <https://www.linkedbuildingdata.net/IFC4-PSD#> .
+@prefix smls: <https://w3id.org/def/smls-owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix inst: <https://www.econom.one/> .
+@prefix mep: <http://pi.pauwel.be/voc/distributionelement#> .
+@prefix furn: <http://pi.pauwel.be/voc/furniture#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix fog: <https://w3id.org/fog#> .
+
+inst:beam_4535fbce-4b46-4542-b47a-b5020c47a2e4
+        props:batid                inst:batid_4535fbce-4b46-4542-b47a-b5020c47a2e4 ;
+        props:outerSurfaceArea     inst:outerSurfaceArea_4535fbce-4b46-4542-b47a-b5020c47a2e4 ;
+        props:nameIfcRoot          inst:nameIfcRoot_4535fbce-4b46-4542-b47a-b5020c47a2e4 ;
+        props:netSurfaceArea       inst:netSurfaceArea_4535fbce-4b46-4542-b47a-b5020c47a2e4 ;
+        props:globalIdIfcRoot      inst:globalIdIfcRoot_4535fbce-4b46-4542-b47a-b5020c47a2e4 ;
+        rdf:type                   beo:Beam-BEAM ;
+        props:crossSectionArea     inst:crossSectionArea_4535fbce-4b46-4542-b47a-b5020c47a2e4 ;
+        props:isExternal           inst:isExternal_4535fbce-4b46-4542-b47a-b5020c47a2e4 ;
+        rdf:type                   beo:Beam ;
+        props:span                 inst:span_4535fbce-4b46-4542-b47a-b5020c47a2e4 ;
+        props:netVolume            inst:netVolume_4535fbce-4b46-4542-b47a-b5020c47a2e4 ;
+        props:elementWeight        inst:elementWeight_4535fbce-4b46-4542-b47a-b5020c47a2e4 ;
+        props:slope                inst:slope_4535fbce-4b46-4542-b47a-b5020c47a2e4 ;
+        props:grossVolume          inst:grossVolume_4535fbce-4b46-4542-b47a-b5020c47a2e4 ;
+        props:objectTypeIfcObject  inst:objectTypeIfcObject_4535fbce-4b46-4542-b47a-b5020c47a2e4 ;
+        props:reference            inst:reference_4535fbce-4b46-4542-b47a-b5020c47a2e4 ;
+        props:roll                 inst:roll_4535fbce-4b46-4542-b47a-b5020c47a2e4 ;
+        props:grossSurfaceArea     inst:grossSurfaceArea_4535fbce-4b46-4542-b47a-b5020c47a2e4 ;
+        rdf:type                   bot:Element ;
+        props:length               inst:length_4535fbce-4b46-4542-b47a-b5020c47a2e4 ;
+        props:loadBearing          inst:loadBearing_4535fbce-4b46-4542-b47a-b5020c47a2e4 .
+
+    inst:elementWeight_4535fbce-4b46-4542-b47a-b5020c47a2e4
+            rdf:type              opm:Property ;
+            rdfs:label            "PSet_RevitCustom:elementWeight" ;
+            opm:hasPropertyState  inst:state_elementWeight_4535fbce-4b46-4542-b47a-b5020c47a2e4_p8 .
+
+    inst:state_elementWeight_4535fbce-4b46-4542-b47a-b5020c47a2e4_p8
+        rdf:type              opm:CurrentPropertyState ;
+        prov:generatedAtTime  "2024-02-14T17:27:54.1622826" ;
+        schema:value          "110"^^<http://www.w3.org/2001/XMLSchema#decimal> .
