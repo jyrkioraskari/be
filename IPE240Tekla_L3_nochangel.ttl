@@ -1,0 +1,567 @@
+@prefix IFC4-PSD: <https://www.linkedbuildingdata.net/IFC4-PSD#> .
+@prefix beo:      <https://pi.pauwel.be/voc/buildingelement#> .
+@prefix bot:      <https://w3id.org/bot#> .
+@prefix fog:      <https://w3id.org/fog#> .
+@prefix furn:     <http://pi.pauwel.be/voc/furniture#> .
+@prefix geo:      <https://www.opengis.net/ont/geosparql#> .
+@prefix ifc:      <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#> .
+@prefix inst:     <https://example.com/> .
+@prefix lbd:      <https://linkedbuildingdata.org/LBD#> .
+@prefix mep:      <http://pi.pauwel.be/voc/distributionelement#> .
+@prefix omg:      <https://w3id.org/omg#> .
+@prefix opm:      <https://w3id.org/opm#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix props:    <http://lbd.arch.rwth-aachen.de/props#> .
+@prefix prov:     <http://www.w3.org/ns/prov#> .
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:   <http://schema.org/> .
+@prefix seas:     <https://w3id.org/seas/> .
+@prefix smls:     <https://w3id.org/def/smls-owl#> .
+@prefix unit:     <http://qudt.org/vocab/unit/> .
+@prefix xsd:      <https://www.w3.org/2001/XMLSchema#> .
+
+lbd:x-max  rdf:type  owl:DatatypeProperty .
+
+inst:IfcValue_List_417
+        rdf:type  ifc:IfcValue_List;
+        <https://w3id.org/list#hasContents>
+                inst:IfcLabel_418 .
+
+ifc:IfcValue_List  rdf:type  owl:Class .
+
+inst:state_globalIdIfcRoot_c0274fb5-448b-4b3b-ba86-f5dd15c00f97_a12
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          "309q_rH8jBExg6zTqLm0_N";
+        prov:generatedAtTime  "2024-03-28T13:43:54.6387102" .
+
+inst:state_nameIfcRoot_09bcb8af-a267-4771-86db-3b41ac0e6dcf_a9
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          "BEAM";
+        prov:generatedAtTime  "2024-03-28T13:43:54.6287055" .
+
+props:NAME  rdf:type  owl:ObjectProperty;
+        rdfs:comment  "IFC property set Additional Properties property NAME" .
+
+inst:state_status_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p13
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          inst:IfcPropertyEnumeratedValue_122;
+        prov:generatedAtTime  "2024-03-28T13:43:54.6277054" .
+
+props:roll  rdf:type  owl:ObjectProperty;
+        rdfs:comment  "IFC property set Pset_BeamCommon property roll" .
+
+inst:state_reference_c0274fb5-448b-4b3b-ba86-f5dd15c00f97_p20
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          "B/0(?)";
+        prov:generatedAtTime  "2024-03-28T13:43:54.6387102" .
+
+props:elevationIfcBuildingStorey
+        rdf:type      owl:ObjectProperty;
+        rdfs:comment  "IFC standard attribute elevationIfcBuildingStorey" .
+
+inst:globalIdIfcRoot_a59c6cb4-b8e8-440c-8e39-5ed2bc98b4e2
+        rdf:type              opm:Property;
+        opm:hasPropertyState  inst:state_globalIdIfcRoot_a59c6cb4-b8e8-440c-8e39-5ed2bc98b4e2_a1 .
+
+ifc:IfcLabel  rdf:type  owl:Class .
+
+inst:state_globalIdIfcRoot_6247f8b6-8d66-492b-9559-3201085dc95c_a6
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          "1YH$YsZMP9AvLPCW48NSbS";
+        prov:generatedAtTime  "2024-03-28T13:43:54.6077048" .
+
+inst:globalIdIfcRoot_c0274fb5-448b-4b3b-ba86-f5dd15c00f97
+        rdf:type              opm:Property;
+        opm:hasPropertyState  inst:state_globalIdIfcRoot_c0274fb5-448b-4b3b-ba86-f5dd15c00f97_a12 .
+
+inst:loadBearing_09bcb8af-a267-4771-86db-3b41ac0e6dcf
+        rdf:type              opm:Property;
+        rdfs:label            "Pset_BeamCommon:loadBearing";
+        rdfs:seeAlso          <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_BeamCommon#p33c26a80d1c411e1800000215ad4efdf>;
+        opm:hasPropertyState  inst:state_loadBearing_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p9 .
+
+props:globalIdIfcRoot
+        rdf:type      owl:ObjectProperty;
+        rdfs:comment  "IFC standard attribute globalIdIfcRoot" .
+
+ifc:IfcPropertyListValue
+        rdf:type          owl:Class;
+        owl:disjointWith  ifc:IfcPropertyTableValue , ifc:IfcPropertyReferenceValue , ifc:IfcPropertyEnumeratedValue , ifc:IfcPropertySingleValue , ifc:IfcPropertyBoundedValue .
+
+inst:grossWeight_09bcb8af-a267-4771-86db-3b41ac0e6dcf
+        rdf:type              opm:Property;
+        rdfs:label            "Qto_BeamBaseQuantities:grossWeight";
+        opm:hasPropertyState  inst:state_grossWeight_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p0 .
+
+inst:state_isExternal_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p10
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          false;
+        prov:generatedAtTime  "2024-03-28T13:43:54.6277054" .
+
+inst:state_WIDTH_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p16
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          "120"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+        prov:generatedAtTime  "2024-03-28T13:43:54.6277054" .
+
+props:LENGTH  rdf:type  owl:ObjectProperty;
+        rdfs:comment  "IFC property set Additional Properties property LENGTH" .
+
+inst:state_globalIdIfcRoot_363ad393-2b9b-4855-9769-c9e446620688_a3
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          "0sEjEJAvj8LPTfoUH6OWQ8";
+        prov:generatedAtTime  "2024-03-28T13:43:54.6057033" .
+
+inst:nameIfcRoot_363ad393-2b9b-4855-9769-c9e446620688
+        rdf:type              opm:Property;
+        opm:hasPropertyState  inst:state_nameIfcRoot_363ad393-2b9b-4855-9769-c9e446620688_a2 .
+
+inst:ifcowl_ifcelementassembly_c0274fb5-448b-4b3b-ba86-f5dd15c00f97
+        rdf:type               ifc:IfcElementAssembly-NOTDEFINED , ifc:IfcElementAssembly , bot:Element;
+        props:globalIdIfcRoot  inst:globalIdIfcRoot_c0274fb5-448b-4b3b-ba86-f5dd15c00f97;
+        props:nameIfcRoot      inst:nameIfcRoot_c0274fb5-448b-4b3b-ba86-f5dd15c00f97;
+        props:reference        inst:reference_c0274fb5-448b-4b3b-ba86-f5dd15c00f97;
+        props:status           inst:status_c0274fb5-448b-4b3b-ba86-f5dd15c00f97 .
+
+props:isExternal  rdf:type  owl:ObjectProperty;
+        rdfs:comment  "IFC property set Pset_BeamCommon property isExternal" .
+
+inst:state_length_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p6
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          "3600"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+        prov:generatedAtTime  "2024-03-28T13:43:54.6207062" .
+
+inst:state_netSurfaceArea_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p1
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          3.42;
+        prov:generatedAtTime  "2024-03-28T13:43:54.6207062" .
+
+props:grossWeight  rdf:type  owl:ObjectProperty;
+        rdfs:comment  "IFC property set Qto_BeamBaseQuantities property grossWeight" .
+
+ifc:IfcPropertySingleValue
+        rdf:type          owl:Class;
+        owl:disjointWith  ifc:IfcPropertyReferenceValue , ifc:IfcPropertyEnumeratedValue , ifc:IfcPropertyBoundedValue , ifc:IfcPropertyTableValue , ifc:IfcPropertyListValue .
+
+props:batid  rdf:type  owl:ObjectProperty;
+        rdfs:comment  "IFC standard attribute batid" .
+
+inst:NAME_09bcb8af-a267-4771-86db-3b41ac0e6dcf
+        rdf:type              opm:Property;
+        rdfs:label            "Additional Properties:NAME";
+        opm:hasPropertyState  inst:state_NAME_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p19 .
+
+ifc:IfcPropertyBoundedValue
+        rdf:type          owl:Class;
+        owl:disjointWith  ifc:IfcPropertyTableValue , ifc:IfcPropertyListValue , ifc:IfcPropertyEnumeratedValue , ifc:IfcPropertyReferenceValue , ifc:IfcPropertySingleValue .
+
+inst:state_grossVolume_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p4
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          0.014;
+        prov:generatedAtTime  "2024-03-28T13:43:54.6207062" .
+
+inst:globalIdIfcRoot_363ad393-2b9b-4855-9769-c9e446620688
+        rdf:type              opm:Property;
+        opm:hasPropertyState  inst:state_globalIdIfcRoot_363ad393-2b9b-4855-9769-c9e446620688_a3 .
+
+props:slope  rdf:type  owl:ObjectProperty;
+        rdfs:comment  "IFC property set Pset_BeamCommon property slope" .
+
+inst:nameIfcRoot_c0274fb5-448b-4b3b-ba86-f5dd15c00f97
+        rdf:type              opm:Property;
+        opm:hasPropertyState  inst:state_nameIfcRoot_c0274fb5-448b-4b3b-ba86-f5dd15c00f97_a11 .
+
+inst:state_nameIfcRoot_6247f8b6-8d66-492b-9559-3201085dc95c_a5
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          "Unknown";
+        prov:generatedAtTime  "2024-03-28T13:43:54.6077048" .
+
+inst:HEIGHT_09bcb8af-a267-4771-86db-3b41ac0e6dcf
+        rdf:type              opm:Property;
+        rdfs:label            "Additional Properties:HEIGHT";
+        opm:hasPropertyState  inst:state_HEIGHT_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p18 .
+
+inst:slope_09bcb8af-a267-4771-86db-3b41ac0e6dcf
+        rdf:type              opm:Property;
+        rdfs:label            "Pset_BeamCommon:slope";
+        rdfs:seeAlso          <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_BeamCommon#p1ee5d700d1c411e1800000215ad4efdf>;
+        opm:hasPropertyState  inst:state_slope_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p12 .
+
+props:crossSectionArea
+        rdf:type      owl:ObjectProperty;
+        rdfs:comment  "IFC property set Qto_BeamBaseQuantities property crossSectionArea" .
+
+inst:status_09bcb8af-a267-4771-86db-3b41ac0e6dcf
+        rdf:type              opm:Property;
+        rdfs:label            "Pset_BeamCommon:status";
+        rdfs:seeAlso          <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_BeamCommon#p0970ad00d1c411e1800000215ad4efdf>;
+        opm:hasPropertyState  inst:state_status_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p13 .
+
+inst:IfcPropertyEnumeratedValue_122
+        rdf:type              ifc:IfcPropertyEnumeratedValue;
+        ifc:enumerationValues_IfcPropertyEnumeratedValue
+                inst:IfcValue_List_417;
+        ifc:name_IfcProperty  inst:IfcIdentifier_416 .
+
+inst:state_nameIfcRoot_363ad393-2b9b-4855-9769-c9e446620688_a2
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          "Unknown";
+        prov:generatedAtTime  "2024-03-28T13:43:54.6057033" .
+
+inst:state_status_c0274fb5-448b-4b3b-ba86-f5dd15c00f97_p21
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          inst:IfcPropertyEnumeratedValue_122;
+        prov:generatedAtTime  "2024-03-28T13:43:54.6387102" .
+
+inst:PROFILE_09bcb8af-a267-4771-86db-3b41ac0e6dcf
+        rdf:type              opm:Property;
+        rdfs:label            "Additional Properties:PROFILE";
+        opm:hasPropertyState  inst:state_PROFILE_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p14 .
+
+inst:nameIfcRoot_09bcb8af-a267-4771-86db-3b41ac0e6dcf
+        rdf:type              opm:Property;
+        opm:hasPropertyState  inst:state_nameIfcRoot_09bcb8af-a267-4771-86db-3b41ac0e6dcf_a9 .
+
+inst:elevationIfcBuildingStorey_6247f8b6-8d66-492b-9559-3201085dc95c
+        rdf:type              opm:Property;
+        opm:hasPropertyState  inst:state_elevationIfcBuildingStorey_6247f8b6-8d66-492b-9559-3201085dc95c_a4 .
+
+inst:nameIfcRoot_6247f8b6-8d66-492b-9559-3201085dc95c
+        rdf:type              opm:Property;
+        opm:hasPropertyState  inst:state_nameIfcRoot_6247f8b6-8d66-492b-9559-3201085dc95c_a5 .
+
+inst:state_crossSectionArea_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p3
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          0.0039;
+        prov:generatedAtTime  "2024-03-28T13:43:54.6207062" .
+
+inst:state_elevationIfcBuildingStorey_6247f8b6-8d66-492b-9559-3201085dc95c_a4
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          "0."^^<http://www.w3.org/2001/XMLSchema#double>;
+        prov:generatedAtTime  "2024-03-28T13:43:54.6077048";
+        smls:unit             unit:MilliM .
+
+inst:state_grossWeight_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p0
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          "110"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+        prov:generatedAtTime  "2024-03-28T13:43:54.6207062" .
+
+inst:state_NAME_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p19
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          "BEAM";
+        prov:generatedAtTime  "2024-03-28T13:43:54.6277054" .
+
+ifc:IfcPropertyReferenceValue
+        rdf:type          owl:Class;
+        owl:disjointWith  ifc:IfcPropertyTableValue , ifc:IfcPropertyListValue , ifc:IfcPropertyEnumeratedValue , ifc:IfcPropertyBoundedValue , ifc:IfcPropertySingleValue .
+
+inst:roll_09bcb8af-a267-4771-86db-3b41ac0e6dcf
+        rdf:type              opm:Property;
+        rdfs:label            "Pset_BeamCommon:roll";
+        rdfs:seeAlso          <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_BeamCommon#p23aa8b00d1c411e1800000215ad4efdf>;
+        opm:hasPropertyState  inst:state_roll_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p11 .
+
+inst:MAIN_PART_09bcb8af-a267-4771-86db-3b41ac0e6dcf
+        rdf:type              opm:Property;
+        rdfs:label            "Additional Properties:MAIN_PART";
+        opm:hasPropertyState  inst:state_MAIN_PART_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p17 .
+
+inst:globalIdIfcRoot_09bcb8af-a267-4771-86db-3b41ac0e6dcf
+        rdf:type              opm:Property;
+        opm:hasPropertyState  inst:state_globalIdIfcRoot_09bcb8af-a267-4771-86db-3b41ac0e6dcf_a10 .
+
+inst:state_outerSurfaceArea_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p7
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          3.32;
+        prov:generatedAtTime  "2024-03-28T13:43:54.6207062" .
+
+inst:netWeight_09bcb8af-a267-4771-86db-3b41ac0e6dcf
+        rdf:type              opm:Property;
+        rdfs:label            "Qto_BeamBaseQuantities:netWeight";
+        opm:hasPropertyState  inst:state_netWeight_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p2 .
+
+props:nameIfcRoot  rdf:type  owl:ObjectProperty;
+        rdfs:comment  "IFC standard attribute nameIfcRoot" .
+
+inst:state_loadBearing_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p9
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          false;
+        prov:generatedAtTime  "2024-03-28T13:43:54.6277054" .
+
+inst:state_batid_09bcb8af-a267-4771-86db-3b41ac0e6dcf_a7
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          "Steel_Undefined";
+        prov:generatedAtTime  "2024-03-28T13:43:54.6287055" .
+
+props:reference  rdf:type  owl:ObjectProperty;
+        rdfs:comment  "IFC property set Pset_ElementAssemblyCommon property reference" .
+
+inst:globalIdIfcRoot_6247f8b6-8d66-492b-9559-3201085dc95c
+        rdf:type              opm:Property;
+        opm:hasPropertyState  inst:state_globalIdIfcRoot_6247f8b6-8d66-492b-9559-3201085dc95c_a6 .
+
+ifc:IfcPropertyEnumeratedValue
+        rdf:type          owl:Class;
+        owl:disjointWith  ifc:IfcPropertyBoundedValue , ifc:IfcPropertyTableValue , ifc:IfcPropertyReferenceValue , ifc:IfcPropertyListValue , ifc:IfcPropertySingleValue .
+
+inst:state_grossSurfaceArea_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p8
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          3.32;
+        prov:generatedAtTime  "2024-03-28T13:43:54.6207062" .
+
+inst:grossVolume_09bcb8af-a267-4771-86db-3b41ac0e6dcf
+        rdf:type              opm:Property;
+        rdfs:label            "Qto_BeamBaseQuantities:grossVolume";
+        opm:hasPropertyState  inst:state_grossVolume_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p4 .
+
+inst:state_LENGTH_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p15
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          "3600"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+        prov:generatedAtTime  "2024-03-28T13:43:54.6277054" .
+
+lbd:hasBoundingBox  rdf:type  owl:ObjectProperty .
+
+inst:state_PROFILE_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p14
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          "IPE240";
+        prov:generatedAtTime  "2024-03-28T13:43:54.6277054" .
+
+inst:IfcIdentifier_416
+        rdf:type  ifc:IfcIdentifier;
+        <https://w3id.org/express#hasString>
+                "Status" .
+
+inst:state_netVolume_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p5
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          0.013;
+        prov:generatedAtTime  "2024-03-28T13:43:54.6207062" .
+
+inst:grossSurfaceArea_09bcb8af-a267-4771-86db-3b41ac0e6dcf
+        rdf:type              opm:Property;
+        rdfs:label            "Qto_BeamBaseQuantities:grossSurfaceArea";
+        opm:hasPropertyState  inst:state_grossSurfaceArea_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p8 .
+
+props:HEIGHT  rdf:type  owl:ObjectProperty;
+        rdfs:comment  "IFC property set Additional Properties property HEIGHT" .
+
+inst:state_globalIdIfcRoot_09bcb8af-a267-4771-86db-3b41ac0e6dcf_a10
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          "09lBYlecT7SORREq6i3ctF";
+        prov:generatedAtTime  "2024-03-28T13:43:54.6287055" .
+
+inst:crossSectionArea_09bcb8af-a267-4771-86db-3b41ac0e6dcf
+        rdf:type              opm:Property;
+        rdfs:label            "Qto_BeamBaseQuantities:crossSectionArea";
+        opm:hasPropertyState  inst:state_crossSectionArea_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p3 .
+
+props:loadBearing  rdf:type  owl:ObjectProperty;
+        rdfs:comment  "IFC property set Pset_BeamCommon property loadBearing" .
+
+props:netVolume  rdf:type  owl:ObjectProperty;
+        rdfs:comment  "IFC property set Qto_BeamBaseQuantities property netVolume" .
+
+inst:state_slope_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p12
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          "0"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+        prov:generatedAtTime  "2024-03-28T13:43:54.6277054" .
+
+inst:state_descriptionIfcRoot_09bcb8af-a267-4771-86db-3b41ac0e6dcf_a8
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          "IPE240";
+        prov:generatedAtTime  "2024-03-28T13:43:54.6287055" .
+
+inst:state_HEIGHT_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p18
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          "240"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+        prov:generatedAtTime  "2024-03-28T13:43:54.6277054" .
+
+lbd:z-min  rdf:type  owl:DatatypeProperty .
+
+inst:LENGTH_09bcb8af-a267-4771-86db-3b41ac0e6dcf
+        rdf:type              opm:Property;
+        rdfs:label            "Additional Properties:LENGTH";
+        opm:hasPropertyState  inst:state_LENGTH_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p15 .
+
+inst:descriptionIfcRoot_09bcb8af-a267-4771-86db-3b41ac0e6dcf
+        rdf:type              opm:Property;
+        opm:hasPropertyState  inst:state_descriptionIfcRoot_09bcb8af-a267-4771-86db-3b41ac0e6dcf_a8 .
+
+inst:state_MAIN_PART_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p17
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          4908;
+        prov:generatedAtTime  "2024-03-28T13:43:54.6277054" .
+
+props:WIDTH  rdf:type  owl:ObjectProperty;
+        rdfs:comment  "IFC property set Additional Properties property WIDTH" .
+
+inst:netSurfaceArea_09bcb8af-a267-4771-86db-3b41ac0e6dcf
+        rdf:type              opm:Property;
+        rdfs:label            "Qto_BeamBaseQuantities:netSurfaceArea";
+        opm:hasPropertyState  inst:state_netSurfaceArea_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p1 .
+
+lbd:y-min  rdf:type  owl:DatatypeProperty .
+
+ifc:IfcPropertyTableValue
+        rdf:type          owl:Class;
+        owl:disjointWith  ifc:IfcPropertySingleValue , ifc:IfcPropertyBoundedValue , ifc:IfcPropertyListValue , ifc:IfcPropertyReferenceValue , ifc:IfcPropertyEnumeratedValue .
+
+inst:site_a59c6cb4-b8e8-440c-8e39-5ed2bc98b4e2
+        rdf:type               bot:Site;
+        props:globalIdIfcRoot  inst:globalIdIfcRoot_a59c6cb4-b8e8-440c-8e39-5ed2bc98b4e2;
+        props:nameIfcRoot      inst:nameIfcRoot_a59c6cb4-b8e8-440c-8e39-5ed2bc98b4e2;
+        bot:hasBuilding        inst:Unknown .
+
+inst:state_roll_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p11
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          "0"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+        prov:generatedAtTime  "2024-03-28T13:43:54.6277054" .
+
+inst:reference_c0274fb5-448b-4b3b-ba86-f5dd15c00f97
+        rdf:type              opm:Property;
+        rdfs:label            "Pset_ElementAssemblyCommon:reference";
+        rdfs:seeAlso          <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_ElementAssemblyCommon#p943159a93c8d4316a7a01b4382c6ea80>;
+        opm:hasPropertyState  inst:state_reference_c0274fb5-448b-4b3b-ba86-f5dd15c00f97_p20 .
+
+inst:netVolume_09bcb8af-a267-4771-86db-3b41ac0e6dcf
+        rdf:type              opm:Property;
+        rdfs:label            "Qto_BeamBaseQuantities:netVolume";
+        opm:hasPropertyState  inst:state_netVolume_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p5 .
+
+props:grossVolume  rdf:type  owl:ObjectProperty;
+        rdfs:comment  "IFC property set Qto_BeamBaseQuantities property grossVolume" .
+
+props:length  rdf:type  owl:ObjectProperty;
+        rdfs:comment  "IFC property set Qto_BeamBaseQuantities property length" .
+
+inst:state_netWeight_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p2
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          "105"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+        prov:generatedAtTime  "2024-03-28T13:43:54.6207062" .
+
+lbd:z-max  rdf:type  owl:DatatypeProperty .
+
+inst:state_globalIdIfcRoot_a59c6cb4-b8e8-440c-8e39-5ed2bc98b4e2_a1
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          "2bd6oqkEX438uvNjAycBJY";
+        prov:generatedAtTime  "2024-03-28T13:43:54.5927063" .
+
+inst:Unknown  rdf:type         bot:Building;
+        props:globalIdIfcRoot  inst:globalIdIfcRoot_363ad393-2b9b-4855-9769-c9e446620688;
+        props:nameIfcRoot      inst:nameIfcRoot_363ad393-2b9b-4855-9769-c9e446620688;
+        bot:hasStorey          <https://example.com/Unknown/Unknown> .
+
+inst:IfcLabel_418  rdf:type  ifc:IfcLabel;
+        <https://w3id.org/express#hasString>
+                "NEW" .
+
+props:status  rdf:type  owl:ObjectProperty;
+        rdfs:comment  "IFC property set Pset_BeamCommon property status" , "IFC property set Pset_ElementAssemblyCommon property status" .
+
+lbd:x-min  rdf:type  owl:DatatypeProperty .
+
+ifc:IfcIdentifier  rdf:type  owl:Class .
+
+props:PROFILE  rdf:type  owl:ObjectProperty;
+        rdfs:comment  "IFC property set Additional Properties property PROFILE" .
+
+props:netSurfaceArea  rdf:type  owl:ObjectProperty;
+        rdfs:comment  "IFC property set Qto_BeamBaseQuantities property netSurfaceArea" .
+
+inst:length_09bcb8af-a267-4771-86db-3b41ac0e6dcf
+        rdf:type              opm:Property;
+        rdfs:label            "Qto_BeamBaseQuantities:length";
+        opm:hasPropertyState  inst:state_length_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p6 .
+
+inst:WIDTH_09bcb8af-a267-4771-86db-3b41ac0e6dcf
+        rdf:type              opm:Property;
+        rdfs:label            "Additional Properties:WIDTH";
+        opm:hasPropertyState  inst:state_WIDTH_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p16 .
+
+inst:isExternal_09bcb8af-a267-4771-86db-3b41ac0e6dcf
+        rdf:type              opm:Property;
+        rdfs:label            "Pset_BeamCommon:isExternal";
+        rdfs:seeAlso          <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_BeamCommon#p286f3f00d1c411e1800000215ad4efdf>;
+        opm:hasPropertyState  inst:state_isExternal_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p10 .
+
+<https://example.com/Unknown/Unknown>
+        rdf:type               bot:Storey;
+        props:elevationIfcBuildingStorey
+                inst:elevationIfcBuildingStorey_6247f8b6-8d66-492b-9559-3201085dc95c;
+        props:globalIdIfcRoot  inst:globalIdIfcRoot_6247f8b6-8d66-492b-9559-3201085dc95c;
+        props:nameIfcRoot      inst:nameIfcRoot_6247f8b6-8d66-492b-9559-3201085dc95c .
+
+inst:state_nameIfcRoot_c0274fb5-448b-4b3b-ba86-f5dd15c00f97_a11
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          "BEAM";
+        prov:generatedAtTime  "2024-03-28T13:43:54.6387102" .
+
+lbd:y-max  rdf:type  owl:DatatypeProperty .
+
+props:grossSurfaceArea
+        rdf:type      owl:ObjectProperty;
+        rdfs:comment  "IFC property set Qto_BeamBaseQuantities property grossSurfaceArea" .
+
+inst:nameIfcRoot_a59c6cb4-b8e8-440c-8e39-5ed2bc98b4e2
+        rdf:type              opm:Property;
+        opm:hasPropertyState  inst:state_nameIfcRoot_a59c6cb4-b8e8-440c-8e39-5ed2bc98b4e2_a0 .
+
+props:MAIN_PART  rdf:type  owl:ObjectProperty;
+        rdfs:comment  "IFC property set Additional Properties property MAIN_PART" .
+
+inst:batid_09bcb8af-a267-4771-86db-3b41ac0e6dcf
+        rdf:type              opm:Property;
+        opm:hasPropertyState  inst:state_batid_09bcb8af-a267-4771-86db-3b41ac0e6dcf_a7 .
+
+inst:status_c0274fb5-448b-4b3b-ba86-f5dd15c00f97
+        rdf:type              opm:Property;
+        rdfs:label            "Pset_ElementAssemblyCommon:status";
+        rdfs:seeAlso          <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_ElementAssemblyCommon#p20e74f79d075407a92f93d6788281332>;
+        opm:hasPropertyState  inst:state_status_c0274fb5-448b-4b3b-ba86-f5dd15c00f97_p21 .
+
+inst:beam_09bcb8af-a267-4771-86db-3b41ac0e6dcf
+        rdf:type                  bot:Element , beo:Beam-NOTDEFINED , beo:Beam;
+        props:HEIGHT              inst:HEIGHT_09bcb8af-a267-4771-86db-3b41ac0e6dcf;
+        props:LENGTH              inst:LENGTH_09bcb8af-a267-4771-86db-3b41ac0e6dcf;
+        props:MAIN_PART           inst:MAIN_PART_09bcb8af-a267-4771-86db-3b41ac0e6dcf;
+        props:NAME                inst:NAME_09bcb8af-a267-4771-86db-3b41ac0e6dcf;
+        props:PROFILE             inst:PROFILE_09bcb8af-a267-4771-86db-3b41ac0e6dcf;
+        props:WIDTH               inst:WIDTH_09bcb8af-a267-4771-86db-3b41ac0e6dcf;
+        props:batid               inst:batid_09bcb8af-a267-4771-86db-3b41ac0e6dcf;
+        props:crossSectionArea    inst:crossSectionArea_09bcb8af-a267-4771-86db-3b41ac0e6dcf;
+        props:descriptionIfcRoot  inst:descriptionIfcRoot_09bcb8af-a267-4771-86db-3b41ac0e6dcf;
+        props:globalIdIfcRoot     inst:globalIdIfcRoot_09bcb8af-a267-4771-86db-3b41ac0e6dcf;
+        props:grossSurfaceArea    inst:grossSurfaceArea_09bcb8af-a267-4771-86db-3b41ac0e6dcf;
+        props:grossVolume         inst:grossVolume_09bcb8af-a267-4771-86db-3b41ac0e6dcf;
+        props:grossWeight         inst:grossWeight_09bcb8af-a267-4771-86db-3b41ac0e6dcf;
+        props:isExternal          inst:isExternal_09bcb8af-a267-4771-86db-3b41ac0e6dcf;
+        props:length              inst:length_09bcb8af-a267-4771-86db-3b41ac0e6dcf;
+        props:loadBearing         inst:loadBearing_09bcb8af-a267-4771-86db-3b41ac0e6dcf;
+        props:nameIfcRoot         inst:nameIfcRoot_09bcb8af-a267-4771-86db-3b41ac0e6dcf;
+        props:netSurfaceArea      inst:netSurfaceArea_09bcb8af-a267-4771-86db-3b41ac0e6dcf;
+        props:netVolume           inst:netVolume_09bcb8af-a267-4771-86db-3b41ac0e6dcf;
+        props:netWeight           inst:netWeight_09bcb8af-a267-4771-86db-3b41ac0e6dcf;
+        props:outerSurfaceArea    inst:outerSurfaceArea_09bcb8af-a267-4771-86db-3b41ac0e6dcf;
+        props:roll                inst:roll_09bcb8af-a267-4771-86db-3b41ac0e6dcf;
+        props:slope               inst:slope_09bcb8af-a267-4771-86db-3b41ac0e6dcf;
+        props:status              inst:status_09bcb8af-a267-4771-86db-3b41ac0e6dcf .
+
+inst:outerSurfaceArea_09bcb8af-a267-4771-86db-3b41ac0e6dcf
+        rdf:type              opm:Property;
+        rdfs:label            "Qto_BeamBaseQuantities:outerSurfaceArea";
+        opm:hasPropertyState  inst:state_outerSurfaceArea_09bcb8af-a267-4771-86db-3b41ac0e6dcf_p7 .
+
+props:outerSurfaceArea
+        rdf:type      owl:ObjectProperty;
+        rdfs:comment  "IFC property set Qto_BeamBaseQuantities property outerSurfaceArea" .
+
+props:netWeight  rdf:type  owl:ObjectProperty;
+        rdfs:comment  "IFC property set Qto_BeamBaseQuantities property netWeight" .
+
+inst:state_nameIfcRoot_a59c6cb4-b8e8-440c-8e39-5ed2bc98b4e2_a0
+        rdf:type              opm:CurrentPropertyState;
+        schema:value          "Unknown";
+        prov:generatedAtTime  "2024-03-28T13:43:54.5927063" .
+
+props:descriptionIfcRoot
+        rdf:type      owl:ObjectProperty;
+        rdfs:comment  "IFC standard attribute descriptionIfcRoot" .
