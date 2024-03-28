@@ -1,0 +1,3 @@
+{  
+ "http://lbd.arch.rwth-aachen.de/props#grossWeight": "http://lbd.arch.rwth-aachen.de/props#elementWeight"
+}
